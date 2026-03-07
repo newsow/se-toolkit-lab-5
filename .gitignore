@@ -12,3 +12,7 @@ __pycache__/
 .lycheecache
 
 tmp
+
+# Qwen Code
+.qwen/
+.agentsQWEN.md
