@@ -55,7 +55,57 @@ tr:nth-child(even) {
   margin: 0;
 }
 
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.nav-links button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-links button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
 .btn-disconnect {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
+}
+
+/* Dashboard */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-section,
+.table-section {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section h2,
+.table-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.dashboard-grid select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
 }
